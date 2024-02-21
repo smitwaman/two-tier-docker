@@ -1,0 +1,25 @@
+version: '3'
+     services:
+       frontend:
+         image: frontend-image
+         ports:
+           - "3000:3000"
+         volumes:
+           - frontend-data:/app/data
+         networks:
+           - my-network
+       backend:
+         image: backend-image
+         ports:
+           - "8080:8080"
+         volumes:
+           - backend-data:/app/data
+         networks:
+           - my-network
+
+     volumes:
+       frontend-data:
+       backend-data:
+
+     networks:
+       my-network:
