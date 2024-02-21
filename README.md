@@ -30,17 +30,15 @@ docker build -t backend-dockerfile .
      docker network create my-network
      ```
 
-   - Update your `docker-compose.yml` file to include volume mounts and network configurations:
+   - Update your `deployment.yml` file to include volume mounts and network configurations:
 
-     ```yaml
-     
-     ```
+    
 
 5. **Orchestrate with Docker Compose**:
    - Use Docker Compose to spin up the containers:
 
      ```
-     docker-compose up
+     deployment up
      ```
 
 6. **Test the Deployment**:
