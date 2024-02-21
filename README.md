@@ -11,8 +11,17 @@ let's integrate Docker persistent volumes (pv) and a Docker network to enhance t
 2. **Containerize the Frontend**:
    - Assuming you have a Dockerfile for the frontend as mentioned before, you can use the same commands to build the frontend image.
 
+Build the frontend image:
+
+docker build -t frontend-dockerfile .
+
 3. **Containerize the Backend**:
    - Similarly, assuming you have a Dockerfile for the backend as mentioned before, you can use the same commands to build the backend image.
+
+
+Build the backend image:
+
+docker build -t backend-dockerfile .
 
 4. **Compose the Docker Infrastructure with Docker Network**:
    - Create a Docker network:
